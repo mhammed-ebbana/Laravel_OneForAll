@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.all{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+   position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(22,30,64,1) 40%, rgba(5,6,9,1) 100%);
+    /* background-image: url('../../data/image/backgroudgrdient.png');
+    background-size: contain;
+    background-repeat: repeat; */
+
+}
+.image_container{
+
+    /* background-color: red;*/
+    width: 49%;
+    background-image: url("../../data/image/clientloginpicture.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+.form_container{
+    /* background-color : yellow; */
+    width: 51%;
+    /* margin: auto; */
+}
+.small_container {
+
+    height: 100vh;
+background-color: red;
+padding: auto;
+
+
+}
+.form_container form{
+
+    background: rgba(255, 255, 255, 0.425);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.82);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(90%,-50%);
+    padding: 1em;
+    font-weight: 500;
+    font-size: large;
+    width: 25%;
+
+}
+
+.form_logoin div{
+display: flex;
+justify-content: space-between;
+margin-top: 1em;
+width: 100%;
+
+}
+.form_logoin input,button{
+   border: 0px;
+   border-radius: 7px;
+   font-weight: 600;
+   padding: .5em;
+   outline: none;
+
+}
+.form_logoin a{
+color: black;
+ }
+ .form_logoin a:hover{
+    color: red;
+     }
+

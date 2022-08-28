@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/*header*/
+.all_body{
+    width: clamp(900px, 100%, 1920px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 73px;
+    height: calc(100vh - 73px);
+    background:linear-gradient(180deg, rgba(16,16,201,1) 40%, rgb(2, 2, 54) 100%, rgba(0,212,255,1) 100%);
+}
+.search_header{
+    background-color: rgba(16,16,201,1);
+    /* width: clamp(900px, 100%, 1920px); */
+    min-width: 900px;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-around;
+    padding: auto;
+    position:fixed;
+    top:0px;
+    width: 100%;
+    padding: 22px;
+}
+
+.title_header{
+    color: white;
+    width: 80%;
+}
+.icons
+{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+.log_in_out_icon{
+    transform: rotateY(180deg);
+}
+
+.compt_detail_icon,.log_in_out_icon{
+    cursor:pointer;
+    }
+
+
+
+.form_search
+{
+   background-color: rgb(255, 255, 255);
+   position:absolute;
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width:clamp(200px,100%,800px) ;
+   border-radius: 70px;
+   display: flex;
+   justify-content: space-around;
+}
+.form_search input{
+    border-radius: 70px;
+    width: 95%;
+    border: 0;
+    border-color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    outline: none;
+}
+.form_search input:hover{
+}
+.form_search button{
+    border-radius: 70px;
+    transform: scale(.7);
+    border: 0;
+}
+
+
+.ti_description{
+    color: rgb(255, 255, 255);
+    text-transform:uppercase;
+    position:absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90vw;
+    text-align: center;
+}
+    @media only screen and (max-width:899px) {
+        .search_header
+            {
+                padding: 22px;
+                min-width: 100vw;
+                width: 100vw;
+                max-width: 100vw;
+            }
+        .title_header{
+                width: 70%;
+                     }
+        .icons
+        {
+                width: 18%;
+        }
+        .all_body
+        {
+                min-width: 100vw;
+                width: 100vw;
+                max-width: 100vw;
+        }
+
+}
