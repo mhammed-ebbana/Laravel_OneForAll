@@ -1,9 +1,9 @@
     //amazone
-    const socket = io.connect('http://192.168.1.99:3030');
+    const socket = io.connect('http://192.168.196.215:3030');
     //ebay
-    const socket1 = io.connect('http://192.168.1.99:3031');
+    const socket1 = io.connect('http://192.168.196.215:3031');
     //aliexpress
-    const socket2 = io.connect('http://192.168.1.99:3032');
+    const socket2 = io.connect('http://192.168.196.215:3032');
     let params = new URLSearchParams(window.location.search);
     let price_product=params.get('search_target_price');
     let name_product=params.get('search_target_name');
