@@ -22,7 +22,7 @@
         <img class="compt_detail_icon" src="data/image/clarity-shutdown-icon.png" title="Log Out" onClick="window.location='/logout'">
         </div>
 
-    </header>
+    </header> 
 
   <section class="all_body">
 

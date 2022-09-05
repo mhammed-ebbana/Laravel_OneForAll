@@ -6,6 +6,8 @@ use App\Http\Controllers\clientcompt;
 use App\Http\Controllers\clientregister;
 use App\Http\Controllers\stripepayement;
 use App\Http\Middleware\clientAutentification;
+use Illuminate\Mail\Mailable;
+use App\Mail\adresseEmailVerification;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,5 +65,17 @@ Route::get('/', function () {
 
    // dd(Hash::check('secret', Hash::make('secret')));
  dd(request()->session()->all());
-
 });
+
+
+// send mail test
+Route::get('/mail', function () {
+
+    $data = array(
+        'name'      =>  'ebbana hi',
+        'message'   =>   'are you okay'
+    );
+    // dd();
+    Mail::to('abana3030@gmail.com')->send(new adresseEmailVerification($data));
+    return'email sent';
+    });

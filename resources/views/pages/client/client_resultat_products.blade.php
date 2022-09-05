@@ -13,11 +13,17 @@
 
 @section('maincontent')
 <form action="" class="form_resultat" method="get">
-            <h1>Best retsults  </h1>
+<h1>Best retsults  </h1>
+
+
             <div class="resultat_container">
+            <h3>Ebay :</h3>
+                <div class="product_ebay">
+                <div class="loader"></div>
+                </div>
                 <h3>amazone :</h3>
                 <div class="product_amazone">
-
+                <div class="loader"></div>
                        <!-- <a  href="https://www.amazon.com/Asus-NanoEdge-Ultra-Slim-NumberPad-Accessories/dp/B09B5L8DKT/ref=sr_1_3?keywords=laptop&qid=1659219676&sprefix=lap%2Caps%2C334&sr=8-3" class="product">
                             <img src="data/image/product_pc.jpg" alt="">
                             <h3>Newest Asus Zenbook 14" IPS FHD NanoEdge Bezel Display Ultra-Slim Laptop</h3>
@@ -34,16 +40,12 @@
                 </div>
                 <h3>AliExpresse :</h3>
                 <div class="product_aliexpresse">
-
+                <div class="loader"></div>
                 </div>
-                <h3>Ebay :</h3>
-                <div class="product_ebay">
 
-                </div>
             </div>
 
           </form>
-
 
 <!--
        <form action="" class="form_search" method="post">
@@ -60,7 +62,6 @@
 
 @endsection
 @section('js_fotter')
-
 <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
 <!-- <script src="{{asset('js/socket/socket.js')}}" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script> -->
 <script src="{{asset('js/client/socketconnectReelTime.js')}}"></script>
