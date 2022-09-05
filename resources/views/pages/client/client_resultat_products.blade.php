@@ -2,7 +2,6 @@
 @section('headcss')
 <link rel="stylesheet" href="{{asset('css/client/client_search_product_stylle.css')}}">
 <link rel="stylesheet" href="{{asset('css/client/client_resultat_product_stylle.css')}}">
-
 @endsection
 
 @section('headJS')
